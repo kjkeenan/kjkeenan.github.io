@@ -101,20 +101,7 @@ $(".masonry-image-2").hover(function() {
 })
 
 
-// var searchBarPosition = $("#navbar-2").offset().top();
 
-$(window).scroll(function() {
-  
-  var currentScroll = $(window).scrollTop();
-  console.log(currentScroll);
-  
-  if (currentScroll < searchBarPosition) {
-    console.log("hello");
-    $("#navbar-2").removeClass("navbar-2-fixed");
-  } else {
-    $("#navbar-2").addClass("navbar-2-fixed");
-  }
-});
 
 $('.attraction-container').mouseover(function() {
   $('.attraction-overlay').show();
