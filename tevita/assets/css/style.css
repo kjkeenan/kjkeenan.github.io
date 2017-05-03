@@ -1,5 +1,5 @@
 body {
-	overflow: hidden;
+	/*overflow: hidden;*/
 	max-width: 1000px;
 }
 
@@ -31,7 +31,8 @@ body {
 	margin: 0 auto;
 	width: 45%;
 	margin: 3%;
-	z-index: 2;
+	z-index: 9;
+	text-align: center;
 }	
 
 .cls-1 {
@@ -57,23 +58,28 @@ body {
 }
 
 .image-container {
-	display: inline-block;
+	position: relative;
+	float: left;
 	width: 30%;
 	height: 50%;
 	margin-left: 0;
 	margin-right: 0;
+	margin-top: 17px;
+	margin-bottom: 11%;
+	z-index: 5;
+	left: 3%;
 }
 
 .image-container img {
-	position: relative;
 	height: 100%;
 	z-index: 2;
 	border: solid white;
+	margin-top: 7px;
 }
 
 #wordies {
-	position: absolute;
-	bottom: 1%;
+	position: fixed;
+	top: 1%;
 	width: 100%;
 	font-family: 'Marck Script', cursive;
 	color: white;
@@ -83,3 +89,13 @@ body {
 	font-size: 2vh;
 }
 
+@media screen and (max-width: 700px) {
+
+	.image-container {
+		display: block;
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 400)
